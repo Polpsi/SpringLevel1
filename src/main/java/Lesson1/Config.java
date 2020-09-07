@@ -1,7 +1,4 @@
 package Lesson1;
-//Еще не доделано
-//Сдал только для того, чтобы успеть по времени
-//для последующего трудоустройства.
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,5 +10,13 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
     @Bean(name = "outer2")
-    public Outer outer(inner);
+    public Outer outer(Inner inner) {
+        return new Outer(inner);
+    };
+
+/*    @Bean(name = "inner2")
+    @Scope("prototype")
+    public Inner inner(){
+        return new Inner();
+    }*/
 }
