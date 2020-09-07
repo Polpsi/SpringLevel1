@@ -1,9 +1,15 @@
 package Lesson1;
 
 
-public class OuterSomething {
+public class Outer {
     private static int number = 0;
     private int myNum;
+
+    public int getInnerNum() {
+        return inner.getMyNum();
+    }
+
+    private Inner inner;
 
     public int getMyNum() {
         return myNum;
@@ -13,7 +19,10 @@ public class OuterSomething {
         this.myNum = myNum;
     }
 
-    OuterSomething(){
+    Outer(Inner inner){
         myNum = number++;
+        this.inner=inner;
     }
+
+
 }
