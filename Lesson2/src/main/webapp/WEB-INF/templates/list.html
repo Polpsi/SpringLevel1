@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+
+<h3>Menu</h3>
+<ul type="circle">
+    <li><a href="/app">Home</a></li>
+    <li><a href="/app/product/list">List products</a></li>
+    <li><a href="/app/product/add">Add product</a></li>
+</ul>
+
+<h1>All products</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Delete product</th>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.id}"></td>
+        <td><a th:href="@{${product.id}}" th:text="${product.name}"></a></td>
+        <td th:text="${product.price}"></td>
+        <td><a th:href="@{/product/delete(id=${product.id})}">Delete product</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

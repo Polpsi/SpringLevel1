@@ -11,8 +11,9 @@ import java.util.UUID;
 public class IndexController {
 
     @GetMapping("/")
-    public String index(Model model){
-        model.addAttribute("message", "My message plus random UUID-> " + UUID.randomUUID());
+    public String index(Model model) {
+        model.addAttribute("list", "/product/list");
+        model.addAttribute("add", "/product/add");
         return "index";
     }
 }
