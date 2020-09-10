@@ -10,9 +10,14 @@ import java.util.UUID;
 @Controller
 public class IndexController {
 
+    //Создание ссылок на карточку товара и удаление в шаблоне list.html
+    //Метод удаления вынес наверх в ProductController.
+    //Остальное практически идентично написанному на уроке (подглядывал, что-то копировал)
+
     @GetMapping("/")
-    public String index(Model model){
-        model.addAttribute("message", "My message plus random UUID-> " + UUID.randomUUID());
+    public String index(Model model) {
+        model.addAttribute("list", "/product/list");
+        model.addAttribute("add", "/product/add");
         return "index";
     }
 }
