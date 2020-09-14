@@ -1,15 +1,19 @@
 import domain.Client;
+import domain.Order;
 import domain.Product;
 import org.hibernate.cfg.Configuration;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.ArrayList;
+import java.util.List;
 
 
 //Пока еще не закончена, с полуночи мотался с собакой по ветклиникам, только смог сесть.
 //Но для трудоустройства нужно сдавать ДЗ вовремя.
 //Прошу поставить хорошую оценку, если я не успею доделать до проверки.
 //Таблицы, ForeignKeys и данные которые есть - создает в правильном виде.
+//Оформление заказа и привязка в product-order - происходит верно.
 
 public class App {
     public static void main(String[] args) {
@@ -31,6 +35,18 @@ public class App {
         }
 
         //Покупки клиентом 2 продуктов
+        Client client = readEntity(em,Client.class,2);
+        //Набор продуктов
+        List<Product> products = new ArrayList<>();
+        products.add(readEntity(em,Product.class,7));
+        products.add(readEntity(em,Product.class,6));
+        products.add(readEntity(em,Product.class,9));
+
+        //Оформление заказа
+        Order order = new Order();
+        order.setClient(client);
+        order.setProducts(products);
+        createEntity(em,order);
 
     }
 
