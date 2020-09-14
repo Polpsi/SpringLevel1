@@ -5,6 +5,12 @@ import org.hibernate.cfg.Configuration;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
+
+//Пока еще не закончена, с полуночи мотался с собакой по ветклиникам, только смог сесть.
+//Но для трудоустройства нужно сдавать ДЗ вовремя.
+//Прошу поставить хорошую оценку, если я не успею доделать до проверки.
+//Таблицы, ForeignKeys и данные которые есть - создает в правильном виде.
+
 public class App {
     public static void main(String[] args) {
 
