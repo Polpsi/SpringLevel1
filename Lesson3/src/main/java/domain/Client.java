@@ -15,7 +15,7 @@ public class Client {
     @Column(name = "Name")
     private String name;
 
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client",cascade = CascadeType.REMOVE)
     private List<Order> orders;
 
 
@@ -24,10 +24,6 @@ public class Client {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {

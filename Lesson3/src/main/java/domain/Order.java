@@ -15,7 +15,7 @@ public class Order {
     @JoinColumn(name = "client_id")
     private Client client;
 
-    @ManyToMany
+    @ManyToMany()
     @JoinTable(
             name = "orders_products",
             joinColumns = @JoinColumn(name = "order_id"),

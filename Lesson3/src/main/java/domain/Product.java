@@ -17,7 +17,7 @@ public class Product {
     @Column(name = "price")
     private Float price;
 
-    @ManyToMany
+    @ManyToMany()
     @JoinTable(name = "orders_products",
             joinColumns = @JoinColumn(name = "product_id"),
             inverseJoinColumns = @JoinColumn(name = "order_id"))
@@ -28,10 +28,6 @@ public class Product {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {

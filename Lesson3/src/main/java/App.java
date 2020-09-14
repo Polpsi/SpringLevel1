@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Таблицы, ForeignKeys и данные которые есть - создает в правильном виде.
-//Оформление заказа и привязка в product-order - происходит верно.
+//Оформление(обновление) заказа и привязка в product-order - происходит верно.
+//Сеттеры id убраны, т.к. не должно менять уники.
+
 
 public class App {
     public static void main(String[] args) {
@@ -27,6 +29,7 @@ public class App {
         for (int i = 0; i < 5; i++) {
             Product product = new Product();
             product.setName("Product" + i);
+            product.setPrice((i+1)*100f);
             createEntity(em, product);
         }
 
@@ -44,6 +47,11 @@ public class App {
         order.setProducts(products);
         createEntity(em,order);
 
+        //Добавим в заказ еще продукт
+        products.add(readEntity(em,Product.class,8));
+        order.setProducts(products);
+        saveEntity(em,order);
+
     }
 
     private static <T> void createEntity(EntityManager em, T entity){
@@ -59,4 +67,16 @@ public class App {
         return entity;
     }
 
+    private static <T> void saveEntity(EntityManager em, T entity){
+        em.getTransaction().begin();
+        T entity1 = em.merge(entity);
+        em.getTransaction().commit();
+        System.out.println(entity1);
+    }
+
+    private static <T> void delEntity(EntityManager em, T entity){
+        em.getTransaction().begin();
+        em.remove(entity);
+        em.getTransaction().commit();
+    }
 }
