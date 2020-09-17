@@ -30,7 +30,7 @@ public class ProductController {
     public String maxprice(Model model) {
         Product product = productService.getMaxPrice();
         model.addAttribute("productMax", product);
-        Product product = productService.getMinPrice();
+        product = productService.getMinPrice();
         model.addAttribute("productMin", product);
         return "maxminprice";
     }
