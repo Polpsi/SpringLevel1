@@ -19,6 +19,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+//Пока есть недочеты, но я занимаюсь этим.
+
 @EnableWebMvc
 @Configuration
 @ComponentScan("Lesson4")
