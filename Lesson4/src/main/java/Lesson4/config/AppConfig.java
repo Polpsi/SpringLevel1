@@ -19,7 +19,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-//Пока есть недочеты, но я занимаюсь этим.
+//Пока есть недочеты с пагинацией, но я занимаюсь этим.
 
 @EnableWebMvc
 @Configuration
