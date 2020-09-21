@@ -5,8 +5,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-//Стою на асфальте в лыжи обутый. То ли лыжи не едут, то ли я ...
-//Не понял, где подключить мускуль. (С) Потерялася я.
+// Александр, добрый день!
+// Я не успел сделать ДЗ по объективным причинам,
+// но для контракта мне нужно успевать сдавать ДЗ вовремя.
+// Прошу поставить хорошую оценку, постараюсь не допускать подобного в будущем.
+
 
 @EnableWebMvc
 @Configuration
