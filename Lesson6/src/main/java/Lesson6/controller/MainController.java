@@ -10,6 +10,7 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("testtext", "fdsa");
+        model.addAttribute("title", "Index Title");
         return "index";
     }
 }
