@@ -1,7 +1,7 @@
 package Lesson7and8.config;
 
-import pro.bolshakov.geekbrains.springlevelone.lesson08.domain.User;
-import pro.bolshakov.geekbrains.springlevelone.lesson08.service.UserService;
+import Lesson7and8.domain.User;
+import Lesson7and8.service.UserService;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
