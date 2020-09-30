@@ -1,7 +1,7 @@
-package Lesson7.controller;
+package Lesson7and8.controller;
 
-import Lesson7.domain.Product;
-import Lesson7.service.ProductService;
+import Lesson7and8.domain.Product;
+import Lesson7and8.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

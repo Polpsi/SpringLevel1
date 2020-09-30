@@ -1,4 +1,4 @@
-package Lesson7.dto;
+package Lesson7and8.dto;
 
 public class EntityNotFoundResponse {
     private int status;

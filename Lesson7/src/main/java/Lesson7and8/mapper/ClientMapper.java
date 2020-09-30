@@ -1,7 +1,7 @@
-package Lesson7.mapper;
+package Lesson7and8.mapper;
 
-import Lesson7.domain.Client;
-import Lesson7.dto.ClientDTO;
+import Lesson7and8.domain.Client;
+import Lesson7and8.dto.ClientDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,4 +1,4 @@
-package Lesson7;
+package Lesson7and8;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

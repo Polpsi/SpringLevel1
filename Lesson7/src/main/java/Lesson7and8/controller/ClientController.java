@@ -1,9 +1,9 @@
-package Lesson7.controller;
+package Lesson7and8.controller;
 
-import Lesson7.dto.ClientDTO;
-import Lesson7.dto.EntityNotFoundResponse;
-import Lesson7.exception.EntityNotFoundException;
-import Lesson7.service.ClientService;
+import Lesson7and8.dto.ClientDTO;
+import Lesson7and8.dto.EntityNotFoundResponse;
+import Lesson7and8.exception.EntityNotFoundException;
+import Lesson7and8.service.ClientService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

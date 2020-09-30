@@ -1,6 +1,6 @@
-package Lesson7.repository;
+package Lesson7and8.repository;
 
-import Lesson7.domain.Product;
+import Lesson7and8.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

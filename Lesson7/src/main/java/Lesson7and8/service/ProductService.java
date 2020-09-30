@@ -1,6 +1,6 @@
-package Lesson7.service;
+package Lesson7and8.service;
 
-import Lesson7.domain.Product;
+import Lesson7and8.domain.Product;
 
 import java.util.List;
 

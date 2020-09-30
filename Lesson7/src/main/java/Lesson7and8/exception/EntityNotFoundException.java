@@ -1,4 +1,4 @@
-package Lesson7.exception;
+package Lesson7and8.exception;
 
 public class EntityNotFoundException extends RuntimeException {
 

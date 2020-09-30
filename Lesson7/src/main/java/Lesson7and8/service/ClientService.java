@@ -1,6 +1,6 @@
-package Lesson7.service;
+package Lesson7and8.service;
 
-import Lesson7.dto.ClientDTO;
+import Lesson7and8.dto.ClientDTO;
 
 import java.util.List;
 

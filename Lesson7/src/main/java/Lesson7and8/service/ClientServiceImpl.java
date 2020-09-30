@@ -1,9 +1,9 @@
-package Lesson7.service;
+package Lesson7and8.service;
 
-import Lesson7.domain.Client;
-import Lesson7.dto.ClientDTO;
-import Lesson7.mapper.ClientMapper;
-import Lesson7.repository.ClientDAO;
+import Lesson7and8.domain.Client;
+import Lesson7and8.dto.ClientDTO;
+import Lesson7and8.mapper.ClientMapper;
+import Lesson7and8.repository.ClientDAO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

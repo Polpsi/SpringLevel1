@@ -1,4 +1,4 @@
-package Lesson7;
+package Lesson7and8;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
