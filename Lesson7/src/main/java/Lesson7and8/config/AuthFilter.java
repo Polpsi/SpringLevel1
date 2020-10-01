@@ -7,6 +7,8 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+//Пока только на стадии "разобрался в коде"
+
 //@Component
 public class AuthFilter implements Filter {
 
